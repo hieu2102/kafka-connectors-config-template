@@ -12,7 +12,7 @@
         "oracle.date.mapping": "timestamp",
         "enable.large.lob.object.support": "true",
         "topic.creation.default.replication.factor": "3",
-        "lob.topic.name.template": "prod_${databaseName}.${schemaName}.${tableName}.${columnName}",
+        "lob.topic.name.template": "${databaseName}.${schemaName}.${tableName}.${columnName}",
         "topic.creation.redo.retention.ms": "-1",
         "errors.log.enable": "true",
         "key.converter": "io.confluent.connect.avro.AvroConverter",
